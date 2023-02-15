@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+#article_list{
+    background-color: #F8F9FA;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login_menu{
+    background-color: #F8F9FA;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#sign_up_menu{
+    background-color: #F8F9FA;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#article_detail{
+    background-color: #F8F9FA;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#article_create{
+    background-color: #F8F9FA;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#article_delete{
+    background-color: #F8F9FA;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container_create{
+    max-width: 100px;
+}
+
+.header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.article_title{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+.title{
+    font-size: calc();
+}
+
+h2, .h2 {
+    font-size: 2rem;
+  }
+.snippet{
+    margin-top: 1%;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+body{
+    background-image: url("/static/img/hero-bg.jpg");
+}
+
+.article_link{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.author{
+    font-size: 0.85rem;
+    margin-bottom: -0.05%;
+}
+
+.article_body{
+    padding-top: 4%;
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}

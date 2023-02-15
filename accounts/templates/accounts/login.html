@@ -1,0 +1,22 @@
+
+{% extends 'app/navbar.html' %}
+{%load static%}
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/admin/login.css">
+{% block content %}
+<div class="container">
+<form  id="login_menu" method = "POST" action="{% url 'accounts:login'%}">
+    {% csrf_token %}
+    {{login.as_p}}
+    <br>
+    <i><a href="/accounts/sign-up/">Register</a></i>
+    {% if request.GET.next %}
+    
+     <input type='hidden' name='next' value='{{ request.GET.next }}'>   
+    {% endif %}
+    <br> 
+    <br>
+    <button class="btn btn-dark" type='submit' value='Login'>Login</button>
+</form>
+{% endblock content %}
+    

@@ -1,0 +1,23 @@
+
+{% extends 'app/navbar.html' %}
+{%load static%}
+<link rel="stylesheet" href="/static/css/style.css">
+
+{% block content %}
+    <div>
+        <p class="header">Delete</p>
+        <form id="article_delete" method='POST' action="{%url 'articles:delete_article' id=article.id%}">
+            {% csrf_token %}
+        <p class="article_body">Do you want to delete <b>'{{article}}'</b>?</p>
+        <br>
+        <br>
+        
+        
+        <button class="btn btn-dark" type='submit'> Delete</button>   
+        <a  class="btn btn-outline-dark" href="/">Cancel</a> 
+    </form>
+
+          
+    </div>
+{% endblock content %}
+    

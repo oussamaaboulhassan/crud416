@@ -1,0 +1,22 @@
+{% extends 'app/navbar.html' %}
+{%load static%}
+<link rel="stylesheet" href="/static/css/style.css">
+{%block content%}
+
+        <p class='header'>Article List</p>
+        <div class="container" id="article_list">
+            {% for article in articles %}
+                <div class="article">
+                    <h2><a type="button" class="article_link" href="{%url 'articles:details' slug=article.slug%}">{{ article.title }}</a></h2> 
+                    {% if user.is_authenticated and user == article.author %}
+                    <i><a href="{%url 'articles:update_article' id=article.id%}">Update</a></i>
+                    <i><a href="{%url 'articles:delete_article' id=article.id%}">Delete</a></i> 
+                    {% endif %}
+                    <p class= "snippet">{{ article.snippet }}</p>
+                    <p class="author">Created By {{article.author}} </p>
+                    <i>{{ article.date }}</i>
+                    <hr>
+                </div>    
+            {% endfor %}
+        </div>
+{% endblock content%}

@@ -1,0 +1,16 @@
+
+{% extends 'app/navbar.html' %}
+{%load static%}
+<link rel="stylesheet" href="/static/style.css">
+{%block content%}
+<div id="article_detail">
+    <p class="article_title">{{article_details.title}}</p>
+
+    <img class="img-fluid mx-auto" src = "{{article_details.photo.url}}" />
+    <p class="article_body">{{article_details.body}}</p>
+    <hr>
+    <i>{{article_details.date}}</i>
+    <p class="author">Created By {{article_details.author}}</p>
+       
+</div>
+{%endblock content%}

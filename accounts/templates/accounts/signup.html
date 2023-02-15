@@ -1,0 +1,16 @@
+
+{% extends 'app/navbar.html' %}
+{%load static%}
+<link rel="stylesheet" href="/static/css/style.css">
+
+{% block content %}
+<form id="sign_up_menu" method = "POST" action="/accounts/sign-up/">
+    {% csrf_token %}
+    {{form}}
+    <br>
+    <br>
+    <button class="btn btn-dark" type='submit' value='Sign up'>Sign up</button>
+</form>
+</div>
+{% endblock content %}
+    
